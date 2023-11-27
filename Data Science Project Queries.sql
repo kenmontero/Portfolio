@@ -17,6 +17,7 @@ ORDER BY Number_of_Jobs DESC
 
 
 
+	
 SELECT job_title, AVG(salary_in_usd) AS Average_Salary
 FROM salaries
 WHERE job_title IN
