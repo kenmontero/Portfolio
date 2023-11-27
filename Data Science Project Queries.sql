@@ -51,6 +51,16 @@ ORDER BY number_of_jobs DESC
 
 
 
+
+SELECT work_year,remote_ratio,count(*) AS number_of_jobs
+FROM salaries
+WHERE remote_ratio = 100
+GROUP BY work_year,remote_ratio
+-- Shows the number of employees that are fully remote.
+
+
+
+
 SELECT work_year,count(*)AS number_of_jobs
 FROM salaries
 GROUP BY work_year
