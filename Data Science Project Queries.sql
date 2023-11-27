@@ -42,7 +42,7 @@ ORDER BY work_year
 
 
 
-SELECT TOP 20 job_title, COUNT(job_title) AS number_of_jobs
+SELECT TOP 10 job_title, COUNT(job_title) AS number_of_jobs
 FROM salaries
 GROUP BY job_title
 ORDER BY number_of_jobs DESC
